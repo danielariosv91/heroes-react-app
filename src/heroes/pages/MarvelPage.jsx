@@ -2,10 +2,10 @@ import { HeroeList } from "../components/HeroeList"
 
 export const MarvelPage = () => {
   return (
-    <>
-      <h1> Marvel Comics</h1>
+    <div className="container">
+      <h1> DC Comics</h1>
 
-     <HeroeList publisher='Marvel Comics'/>
-    </>
+      <HeroeList publisher='Marvel Comics' />
+    </div>
   )
 }
