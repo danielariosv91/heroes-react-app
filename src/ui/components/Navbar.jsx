@@ -1,6 +1,15 @@
-import { Navigate, NavLink } from "react-router-dom";
+import { Navigate, NavLink, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+
+    const navigate = useNavigate(); 
+
+    const handleLogout = () => {
+        navigate('/login', {
+            replace: true
+        });
+    } 
+
     return (
         <nav className="navigation">
             <ul>
@@ -20,9 +29,7 @@ export const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/logout">
-                        Logout
-                    </NavLink>
+                    <button onClick={handleLogout}>Logout</button>
                 </li>
             </ul>
         </nav>
