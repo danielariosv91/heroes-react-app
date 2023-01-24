@@ -15,6 +15,11 @@ export const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
+                    <NavLink to="/search">
+                        Busqueda
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to="/logout">
                         Logout
                     </NavLink>
